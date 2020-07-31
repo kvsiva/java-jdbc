@@ -12,7 +12,7 @@ public class TableDrop {
         String SQL_DROP = "DROP TABLE IF EXISTS EMPLOYEE";
 
         try (Connection conn = DriverManager.getConnection(
-                "jdbc:postgresql://127.0.0.1:5432/postgres", "postgres", "tiger");
+                "jdbc:postgresql://172.17.0.2:5432/postgres", "postgres", "tiger");
              Statement statement = conn.createStatement()) {
 
             // if DDL failed, it will raise an SQLException

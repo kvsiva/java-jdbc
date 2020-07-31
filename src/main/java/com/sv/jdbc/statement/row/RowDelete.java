@@ -13,7 +13,7 @@ public class RowDelete {
                 "jdbc:postgresql://172.17.0.2:5432/postgres", "postgres", "tiger");
              Statement statement = conn.createStatement()) {
 
-            int row = statement.executeUpdate(deleteByName("sv"));
+            int row = statement.executeUpdate(deleteByName("Mani"));
 
             // rows affected
             System.out.println(row);
